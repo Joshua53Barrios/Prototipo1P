@@ -28,7 +28,6 @@ public class Menu extends javax.swing.JFrame {
 
         venta = new javax.swing.JButton();
         factura = new javax.swing.JButton();
-        ayuda = new javax.swing.JButton();
         informe = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -41,10 +40,18 @@ public class Menu extends javax.swing.JFrame {
         });
 
         factura.setText("Registrar Factura");
-
-        ayuda.setText("Menu de ayuda");
+        factura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                facturaActionPerformed(evt);
+            }
+        });
 
         informe.setText("Informe");
+        informe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                informeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -57,9 +64,7 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(factura)
                 .addGap(18, 18, 18)
                 .addComponent(informe)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ayuda)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addContainerGap(268, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -68,7 +73,6 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(venta)
                     .addComponent(factura)
-                    .addComponent(ayuda)
                     .addComponent(informe))
                 .addContainerGap())
         );
@@ -81,6 +85,18 @@ public class Menu extends javax.swing.JFrame {
         form.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_ventaActionPerformed
+
+    private void facturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_facturaActionPerformed
+        RegistrarFactura form1=new RegistrarFactura();
+        form1.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_facturaActionPerformed
+
+    private void informeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_informeActionPerformed
+         Informe form1=new Informe();
+        form1.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_informeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,7 +134,6 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ayuda;
     private javax.swing.JButton factura;
     private javax.swing.JButton informe;
     private javax.swing.JButton venta;
