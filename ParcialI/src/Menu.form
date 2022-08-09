@@ -30,9 +30,7 @@
               <Component id="factura" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="informe" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="ayuda" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="137" max="32767" attributes="0"/>
+              <EmptySpace pref="268" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -43,7 +41,6 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="venta" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="factura" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ayuda" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="informe" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -64,16 +61,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Registrar Factura"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="ayuda">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Menu de ayuda"/>
-      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="facturaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="informe">
       <Properties>
         <Property name="text" type="java.lang.String" value="Informe"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="informeActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
