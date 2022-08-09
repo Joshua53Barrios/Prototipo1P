@@ -23,13 +23,57 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="venta" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="factura" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="informe" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="ayuda" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="137" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="296" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="venta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="factura" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ayuda" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="informe" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="venta">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Registrar Venta"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ventaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="factura">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Registrar Factura"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="ayuda">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Menu de ayuda"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="informe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Informe"/>
+      </Properties>
+    </Component>
+  </SubComponents>
 </Form>

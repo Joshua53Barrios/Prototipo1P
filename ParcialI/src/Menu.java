@@ -26,21 +26,61 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        venta = new javax.swing.JButton();
+        factura = new javax.swing.JButton();
+        ayuda = new javax.swing.JButton();
+        informe = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        venta.setText("Registrar Venta");
+        venta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ventaActionPerformed(evt);
+            }
+        });
+
+        factura.setText("Registrar Factura");
+
+        ayuda.setText("Menu de ayuda");
+
+        informe.setText("Informe");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(venta)
+                .addGap(18, 18, 18)
+                .addComponent(factura)
+                .addGap(18, 18, 18)
+                .addComponent(informe)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ayuda)
+                .addContainerGap(137, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(296, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(venta)
+                    .addComponent(factura)
+                    .addComponent(ayuda)
+                    .addComponent(informe))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ventaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ventaActionPerformed
+        RegistrarVenta form=new RegistrarVenta();
+        form.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_ventaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +118,9 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ayuda;
+    private javax.swing.JButton factura;
+    private javax.swing.JButton informe;
+    private javax.swing.JButton venta;
     // End of variables declaration//GEN-END:variables
 }
